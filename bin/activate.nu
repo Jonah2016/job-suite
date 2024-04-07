@@ -9,7 +9,7 @@ def-env activate-virtualenv [] {
     }
 
     let is_windows = ((sys).host.name | str downcase) == 'windows'
-    let virtual_env = '/Users/jonahetuaful/Development/Python/test-suite'
+    let virtual_env = '/Users/jonahetuaful/Development/Python/job-suite'
     let bin = 'bin'
     let path_sep = ':'
     let path_name = if $is_windows {
@@ -89,4 +89,4 @@ def-env activate-virtualenv [] {
 activate-virtualenv
 
 alias pydoc = python -m pydoc
-alias deactivate = source '/Users/jonahetuaful/Development/Python/test-suite/bin/deactivate.nu'
+alias deactivate = source '/Users/jonahetuaful/Development/Python/job-suite/bin/deactivate.nu'
